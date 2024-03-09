@@ -40,6 +40,17 @@
 
 
 
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+  @font-face {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+
 .main-button {
   padding: 18px 40px;
   border: 1px solid #FFFFFF;
@@ -108,7 +119,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 1px;
   text-align: center;
   color: #000000;
 
@@ -122,5 +133,15 @@
   letter-spacing: 0em;
   text-align: left;
   color: #000000;
+
+}
+.main_h4 {
+  font-family: Oswald;
+font-size: 26px;
+font-weight: 600;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
 
 }

@@ -11,7 +11,9 @@ const Hero = () => {
                     <div className="main_btn">
                         <a href="#">Meer</a>
                     </div>
-                    <img src={header_img} alt="" />
+                    <div className='hero_before'>
+                        <img src={header_img} alt="" />
+                    </div>
                 </div>
             </div>
         </section>

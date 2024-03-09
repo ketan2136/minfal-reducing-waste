@@ -5,6 +5,8 @@ import Hero from './Components/Hero/Hero';
 import Popcornbeker from './Components/Popcornbeker/Popcornbeker';
 import Assortiment from './Components/Assortiment/Assortiment';
 import Onze from './Components/Onze/Onze';
+import Partner from './Components/Partner/Partner';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Popcornbeker />
         <Assortiment />
         <Onze />
+        <Partner />
+        <Footer />
     </div>
   );
 }
