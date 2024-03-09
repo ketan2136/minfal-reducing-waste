@@ -1,0 +1,22 @@
+.navbar-main {
+    border-bottom: 1px solid #FFFFFF33;
+    background: #436041;
+}
+
+.atags {
+    display: flex;
+    column-gap: 66px;
+    margin-right: 66px;
+}
+
+.atags a {
+    font-family: Gothic A1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.navbar-main .container {
+    max-width: 1560px;
+}

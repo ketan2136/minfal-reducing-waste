@@ -32,7 +32,95 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.main-button {
+  padding: 18px 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.main-button a {
+  font-family: Gothic A1;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: unset;
+}
+
+.main_btn {
+  text-align: center;
+}
+
+.main_btn a {
+  font-family: Gothic A1;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: unset;
+  padding: 18px 40px;
+  border-radius: 4px;
+}
+
+.main_h1 {
+  font-family: Oswald;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.main_h2 {
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #436041;
+}
+
+.main_p {
+  font-family: Gothic A1;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+
+.main_h5 {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+
+}
+
+.main_h3 {
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+
 }

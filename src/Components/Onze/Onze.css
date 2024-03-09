@@ -1,0 +1,54 @@
+.onze {
+    background: url('../Assets/onze.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 260px 0;
+}
+
+.onze_boxs {
+    margin-top: 60px;
+}
+
+.onze_boxs .main_p {
+    text-align: left;
+    padding-top: 30px;
+}
+
+.onze_boxs .main_btn {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.onze_boxs .main_btn a {
+    background: #96B37D;
+    box-shadow: 0px 4px 20px 0px #362D2D40;
+}
+
+.onze_num {
+    display: flex;
+}
+
+.onze_num span {
+    font-family: Oswald;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #436041;
+    padding: 30px 20px 0 0;
+}
+
+.onze_box {
+    padding: 25px;
+}
+
+.onze_right {
+    padding-top: 100px;
+}
+
+.onze_2 {
+    display: flex;
+   
+}
