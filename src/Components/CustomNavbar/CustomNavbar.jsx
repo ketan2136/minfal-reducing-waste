@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './CustomNavbar.css'
 import main_logo from '../Assets/Minfal_logo 1.png'
+import { Link } from 'react-router-dom';
 function CustomNavbar() {
   return (
     <div className="navbar-main">
@@ -21,11 +22,32 @@ function CustomNavbar() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">Over ons</Link>
+                </li>
+                <li>
+                  <Link to="/popcornbekers">Popcornbeker</Link>
+                </li>
+                <li>
+                  <Link to="/refill">Refill</Link>
+                </li>
+                <li>
+                  <Link to="/circulair">Circulair</Link>
+                </li>
+                <li>
+                  <Link to="/producten">Producten</Link>
+                </li>
+               
+              </ul>
+              {/* <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action2">Over ons</Nav.Link>
               <Nav.Link href="#action2">Refill</Nav.Link>
               <Nav.Link href="#action2">Circulair</Nav.Link>
-              <Nav.Link href="#action2">Producten</Nav.Link>
+              <Nav.Link href="#action2">Producten</Nav.Link> */}
 
               {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -62,3 +84,8 @@ function CustomNavbar() {
 }
 
 export default CustomNavbar;
+
+
+
+
+

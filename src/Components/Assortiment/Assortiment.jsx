@@ -13,20 +13,28 @@ const Assortiment = () => {
                 <div className="boxs">
                     <div className="row">
                         <div className="col-4">
-                            <h2 className="main_h2">10 mln</h2>
+                            <div className="h2_main">
+                                <h2 className="main_h2">10 mln</h2>
+                            </div>
                             <p className="main_p">Wegwerp- popcornbekers vervangen is één van onze doelen</p>
                         </div>
                         <div className="col-4">
-                            <h2 className="main_h2">1 vs 100</h2>
+                            <div className="h2_main">
+                                <h2 className="main_h2">1 vs 100</h2>
+                            </div>
                             <p className="main_p">Elke popcornbeker kan meer dan honderd wegwerpverpakkingen besparen</p>
                         </div>
                         <div className="col-4">
-                            <h2 className="main_h2">100.000'EN</h2>
+                            <div className="h2_main">
+                                <h2 className="main_h2">100.000'EN</h2>
+                            </div>
                             <p className="main_p">bezoekers eindigen hun bezoek door ons niet bij de prullenbak</p>
                         </div>
                     </div>
                 </div>
-                <h2 className='main_h2'>Ons volledige herbruikbare assortiment</h2>
+                <div className="h2_main">
+                    <h2 className='main_h2'>Ons volledige herbruikbare assortiment</h2>
+                </div>
                 <div className="boxs2">
                     <div className="row">
                         <div className="col-2">

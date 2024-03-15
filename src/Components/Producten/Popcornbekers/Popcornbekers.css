@@ -1,0 +1,37 @@
+.popcornbekers {
+    padding-top: 90px;
+}
+
+.popcornbekers .main_p {
+    padding-top: 12px;
+}
+
+.box_popcorn {
+    margin-top: 40px;
+}
+
+.boxs_popcorn {
+    box-shadow: 0px 4px 40px 0px #0000001A;
+    border-radius: 20px;
+    padding: 28px 35px;
+    height: 100%;
+}
+
+.boxs_popcorn img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.boxs_popcorn .main_h5 {
+    padding-top: 65px;
+}
+
+.popcornbekers .main_btn {
+    margin-top: 65px;
+}
+
+.popcornbekers .main_btn a {
+    background: #96B37D;
+    box-shadow: 0px 4px 20px 0px #362D2D40;
+
+}

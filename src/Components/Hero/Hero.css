@@ -33,21 +33,6 @@ position: relative;
     position: relative;
 }
 
-/* .Hero-main::after {
-    content: "";
-    background: url('../Assets/Header_after.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 265.5px;
-    height: 264.98px;
-    opacity: 0.2px;
-    z-index: 99;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-
 .Hero-main::after {
     content: "";
     background: url('../Assets/Header_after.png');

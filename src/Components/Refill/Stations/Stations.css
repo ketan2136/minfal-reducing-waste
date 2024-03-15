@@ -1,0 +1,57 @@
+.stations {
+    padding-top: 70px;
+}
+
+.box_ref .main_p {
+    text-align: start;
+    padding-right: 12px;
+}
+
+.stations .h2_main {
+    padding-bottom: 17px;
+}
+
+.box_ref .main_p img {
+    margin-right: 12px;
+}
+
+.box_ref .main_h3 {
+    padding-top: 51px;
+}
+
+.box_ref span {
+    border: 3px solid #000000;
+    display: flex;
+    width: 78px;
+    margin-bottom: 30px;
+}
+
+.station_img {
+    padding-top: 105px;
+}
+
+.station_img .main_h5 {
+    padding-top: 14px;
+}
+
+.ref2 {
+    padding-top: 50px;
+}
+
+.ref2 .station_img {
+    padding-top: 80px;
+}
+
+.station2_manu {
+    padding-left: 64px;
+}
+.stations .main_btn {
+    margin-top: 54px;
+}
+.last_heading {
+    padding-top: 54px;
+} 
+
+.last_heading .main_btn a{
+    background: #96B37D;
+}

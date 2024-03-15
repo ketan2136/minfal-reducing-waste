@@ -8,7 +8,9 @@ const Onze = () => {
     return (
         <section className='onze'>
             <div className="container">
-                <h2 className="main_h2">Onze verkoopmodellen</h2>
+                <div className="h2_main">
+                    <h2 className="main_h2">Onze verkoopmodellen</h2>
+                </div>
                 <p className="main_p">Een Refill- of Circulair concept</p>
                 <div className="onze_boxs">
                     <div className="row">

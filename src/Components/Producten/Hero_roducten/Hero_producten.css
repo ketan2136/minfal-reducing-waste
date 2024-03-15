@@ -1,0 +1,11 @@
+.hero_pro {
+    background-image: url('../../Assets/over_header.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 328px;
+}
+
+.hero_pro .main_h1 {
+    padding-top: 90px;
+}
