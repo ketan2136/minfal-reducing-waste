@@ -8,6 +8,10 @@ import './CustomNavbar.css'
 import main_logo from '../Assets/Minfal_logo 1.png'
 import { Link } from 'react-router-dom';
 function CustomNavbar() {
+
+
+  
+
   return (
     <div className="navbar-main">
       <Navbar expand="lg"  >
@@ -23,13 +27,13 @@ function CustomNavbar() {
               navbarScroll
             >
               <ul>
-                <li>
-                  <Link to="/">Home</Link>
+                <li >
+                  <Link   to="/">Home</Link>
                 </li>
                 <li>
                   <Link to="/about">Over ons</Link>
                 </li>
-                <li>
+                <li >
                   <Link to="/popcornbekers">Popcornbeker</Link>
                 </li>
                 <li>
@@ -41,40 +45,14 @@ function CustomNavbar() {
                 <li>
                   <Link to="/producten">Producten</Link>
                 </li>
-               
-              </ul>
-              {/* <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Over ons</Nav.Link>
-              <Nav.Link href="#action2">Refill</Nav.Link>
-              <Nav.Link href="#action2">Circulair</Nav.Link>
-              <Nav.Link href="#action2">Producten</Nav.Link> */}
 
-              {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown> */}
-              {/* <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link> */}
+              </ul>
+
             </Nav>
             <div className='main-button'>
-              <a href="">Contact</a>
+              <Link to="/contact">Contact</Link>
+              {/* <a href="" to='contact'>Contact</a> */}
             </div>
-            {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

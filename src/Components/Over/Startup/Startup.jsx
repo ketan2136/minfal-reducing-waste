@@ -7,7 +7,9 @@ const Startup = () => {
         <div>
             <section className='startup'>
                 <div className="container">
-                    <h2 className='main_h2'>Wij zijn een Lean-Startup.</h2>
+                    <div className="h2_main">
+                        <h2 className='main_h2'>Wij zijn een Lean-Startup.</h2>
+                    </div>
                     <p className='main_p'>Dat wil zeggen dat we onze producten mede ontwikkeld hebben met feedback vanuit de markt zelf, waardoor ons product perfect in de markt past.</p>
                     <div className="houden">
                         <div className="row">

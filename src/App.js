@@ -9,6 +9,7 @@ import Popcornbekers from "./pages/Popcornbekers.jsx";
 import Refill from "./pages/Refill.jsx";
 import Circulair from "./pages/Circulair.jsx";
 import Producten from "./pages/Producten.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/refill" element={<Refill />} />
         <Route path="/circulair" element={<Circulair />} />
         <Route path="/producten" element={<Producten />} />
+        <Route path="/contact" element={<Contact />} />
        
       </Routes>
       <Footer />

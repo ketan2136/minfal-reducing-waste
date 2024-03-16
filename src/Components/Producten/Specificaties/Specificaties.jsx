@@ -35,7 +35,6 @@ const Specificaties = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className='sp_img sp2_img'>
                         <div className='row'>
                             <div className="col-6">

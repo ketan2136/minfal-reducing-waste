@@ -1,0 +1,43 @@
+.offerte {
+    padding-top: 70px;
+}
+
+.offerte .main_p {
+    padding-top: 20px;
+}
+
+.offerte .main_btn {
+    text-align: start;
+    margin-top: 65px;
+}
+
+.offerte .main_btn a {
+    background: #96B37D;
+}
+
+.inpute_boxs label {
+    font-family: Gothic A1;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 18px;
+}
+.inpute_boxs input {
+    border: 1px solid #96B37D;
+    background: #F6F6F6;
+    border-radius: 4px;
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+}
+
+.off_box {
+    padding-top: 30px;
+}
+
+.contact_img {
+    padding-top: 100px;
+}
+

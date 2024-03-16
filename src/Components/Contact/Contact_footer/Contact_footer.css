@@ -1,0 +1,33 @@
+.contact_footer {
+    padding-top: 70px;
+}
+
+.contact_footer .main_p {
+    text-align: start;
+}
+
+.contact_footer .h2_main {
+    text-align: start;
+}
+.maps {
+    position: relative;
+}
+
+.maps iframe {
+    border-radius: 20px;
+    border: 2px solid #436041;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.maps::before {
+    content: '';
+    background: url(../../Assets/contact_map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -45px;
+    width: 599px;
+    height: 554px;
+}

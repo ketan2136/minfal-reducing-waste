@@ -21,16 +21,19 @@
     max-width: 1560px;
 }
 
-.navbar-main ul{
+.navbar-main ul {
     display: flex;
     justify-content: space-between;
 }
-.navbar-main ul li{
+
+.navbar-main ul li {
     list-style: none;
     padding-left: 68px;
 }
-.navbar-main ul li a{
-   text-decoration: none;
+
+.navbar-main ul li a {
+    text-decoration: none;
+    position: relative;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -38,3 +41,26 @@
     flex-basis: auto;
     align-items: baseline;
 }
+
+
+
+.navbar-main li a::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 30.5px;
+    background-color: #FFFFFF;
+    top: calc(100% + 17px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0px;
+    display: none;
+}
+
+.navbar-main li a:hover::before ,
+.navbar-main li:active a::before {
+    display: block;
+}
+
+
+

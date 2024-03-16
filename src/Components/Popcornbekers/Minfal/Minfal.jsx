@@ -6,7 +6,9 @@ const Minfal = () => {
         <div>
             <section className='Minfal'>
                 <div className="container">
-                    <h2 className="main_h2">Ga voor duurzaam met Minfal</h2>
+                    <div className="h2_main">
+                        <h2 className="main_h2">Ga voor duurzaam met Minfal</h2>
+                    </div>
                     <p className="main_p">Onze herbruikbare popcornbekers</p>
                     <p className="main_p">Vervang wegwerpverpakkingen voor de herbruikbare popcornbekers van Minfal. Hiermee boost u uw duurzaamheidsimago en kunt u besparen op verpakkingskosten. Een uniek en iconisch product, maar dan duurzaam.</p>
                     <div className="Voordelen">
@@ -27,7 +29,7 @@ const Minfal = () => {
                                     <li>Iconisch product</li>
                                     <li>Verkoop als Merchandise of intern wassen</li>
                                 </ul>
-                               
+
                             </div>
                         </div>
                     </div>

@@ -60,7 +60,19 @@
 
 .sp2_img {
     padding: 80px 0 300px 0;
+    position: relative;
 }
 .sp2_img .h2_main{
    text-align: start;
+}
+
+.sps_img::after {
+    content: '';
+    background: url('../../Assets/Chipstray.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

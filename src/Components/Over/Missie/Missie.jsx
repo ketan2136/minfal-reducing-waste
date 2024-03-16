@@ -5,7 +5,9 @@ const Missie = () => {
         <div>
             <section className='missie'>
                 <div className="container">
-                    <h2 className='main_h2'>Onze Missie</h2>
+                    <div className="h2_main">
+                        <h2 className='main_h2'>Onze Missie</h2>
+                    </div>
                     <p className="main_p">Onze missie is het reduceren van verpakkingsafval in de amusementssector doormiddel van het ontwikkelen van herbruikbare verpakkingen en circulaire verpakkingssystemen.</p>
                 </div>
             </section>
