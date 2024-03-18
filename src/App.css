@@ -168,5 +168,12 @@
 }
 
 body {
-  background: #f3f7f1;
+  background: #f3f7f1 !important;
+}
+
+.leaflet-cintainer {
+  /* width: 500px;
+  height: 500px; */
+  position: relative;
+  z-index: 99;
 }

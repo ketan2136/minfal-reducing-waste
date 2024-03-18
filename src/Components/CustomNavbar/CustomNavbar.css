@@ -58,9 +58,8 @@
 }
 
 .navbar-main li a:hover::before ,
-.navbar-main li:active a::before {
+.navbar-main li a.active::before {
     display: block;
 }
-
 
 

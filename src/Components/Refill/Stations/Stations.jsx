@@ -50,12 +50,14 @@ const Stations = () => {
                                     <img src={ref_icon} alt="" />
                                     <p className="main_p">Schaalbaar naar een circulair systeem</p>
                                 </div> */}
-                                <p className="main_p"><img src={ref_icon} alt="" />In combinatie met herbruikbare popcornbekers en andere herbruikbare producten van Minfal</p>
-                                <p className="main_p"><img src={ref_icon} alt="" />Verschillende formaten en samenstellingen mogelijk</p>
-                                <p className="main_p"><img src={ref_icon} alt="" />Het is een marketingmiddel (POS)</p>
-                                <p className="main_p"><img src={ref_icon} alt="" />Klanten zullen de mogelijkheid om zelf te tappen waarderen, het is een trend</p>
-                                <p className="main_p"><img src={ref_icon} alt="" />Bewezen verkoopmodel (bij AMC)</p>
-                                <p className="main_p"><img src={ref_icon} alt="" />Schaalbaar naar een circulair systeem</p>
+                                <div className='handle_p'>
+                                    <p className="main_p"><img src={ref_icon} alt="" />In combinatie met herbruikbare popcornbekers en andere herbruikbare producten van Minfal</p>
+                                    <p className="main_p"><img src={ref_icon} alt="" />Verschillende formaten en samenstellingen mogelijk</p>
+                                    <p className="main_p"><img src={ref_icon} alt="" />Het is een marketingmiddel (POS)</p>
+                                    <p className="main_p"><img src={ref_icon} alt="" />Klanten zullen de mogelijkheid om zelf te tappen waarderen, het is een trend</p>
+                                    <p className="main_p"><img src={ref_icon} alt="" />Bewezen verkoopmodel (bij AMC)</p>
+                                    <p className="main_p"><img src={ref_icon} alt="" />Schaalbaar naar een circulair systeem</p>
+                                </div>
                                 <h3 className="main_h3">Warme popcorn</h3>
                                 <span></span>
                                 <p className="main_p">De Refill Stations houden de popcorn warm, zodat de bezoeker kan genieten van warme popcorn. De Refill stations houden de popcorn ook knapperig en droog. De stations moeten gevuld worden met Ready-to-serve popcorn.</p>

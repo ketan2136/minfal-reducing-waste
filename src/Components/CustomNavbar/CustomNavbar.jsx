@@ -6,17 +6,17 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './CustomNavbar.css'
 import main_logo from '../Assets/Minfal_logo 1.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 function CustomNavbar() {
 
-
-  
+  const location = useLocation();
+ 
 
   return (
     <div className="navbar-main">
       <Navbar expand="lg"  >
         <Container >
-          <Navbar.Brand href="#" >
+          <Navbar.Brand href="/" >
             <img src={main_logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,26 +28,24 @@ function CustomNavbar() {
             >
               <ul>
                 <li >
-                  <Link   to="/">Home</Link>
+                  <Link className={location.pathname === '/' ? 'active' : ''} to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">Over ons</Link>
+                  <Link className={location.pathname === '/about' ? 'active' : ''} to="/about">Over ons</Link>
                 </li>
                 <li >
-                  <Link to="/popcornbekers">Popcornbeker</Link>
+                  <Link className={location.pathname === '/popcornbekers' ? 'active' : ''} to="/popcornbekers">Popcornbeker</Link>
                 </li>
                 <li>
-                  <Link to="/refill">Refill</Link>
+                  <Link className={location.pathname === '/refill' ? 'active' : ''} to="/refill">Refill</Link>
                 </li>
                 <li>
-                  <Link to="/circulair">Circulair</Link>
+                  <Link className={location.pathname === '/circulair' ? 'active' : ''} to="/circulair">Circulair</Link>
                 </li>
                 <li>
-                  <Link to="/producten">Producten</Link>
+                  <Link className={location.pathname === '/producten' ? 'active' : ''} to="/producten">Producten</Link>
                 </li>
-
               </ul>
-
             </Nav>
             <div className='main-button'>
               <Link to="/contact">Contact</Link>
@@ -62,8 +60,5 @@ function CustomNavbar() {
 }
 
 export default CustomNavbar;
-
-
-
 
 

@@ -6,6 +6,11 @@
     text-align: start;
     padding-right: 12px;
 }
+.handle_p .main_p {
+    text-align: start;
+    padding-left: 50px;
+    position: relative;
+}
 
 .stations .h2_main {
     padding-bottom: 17px;
@@ -13,7 +18,12 @@
 
 .box_ref .main_p img {
     margin-right: 12px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 .box_ref .main_h3 {
     padding-top: 51px;
@@ -45,13 +55,15 @@
 .station2_manu {
     padding-left: 64px;
 }
+
 .stations .main_btn {
     margin-top: 54px;
 }
+
 .last_heading {
     padding-top: 54px;
-} 
+}
 
-.last_heading .main_btn a{
+.last_heading .main_btn a {
     background: #96B37D;
 }

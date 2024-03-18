@@ -9,8 +9,9 @@
 .contact_footer .h2_main {
     text-align: start;
 }
+
 .maps {
-    position: relative;
+    position: absolute;
 }
 
 .maps iframe {
@@ -22,7 +23,7 @@
 
 .maps::before {
     content: '';
-    background: url(../../Assets/contact_map.png);
+    background: url('../../Assets/contact_map.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,3 +32,4 @@
     width: 599px;
     height: 554px;
 }
+

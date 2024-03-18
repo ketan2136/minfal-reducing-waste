@@ -9,39 +9,39 @@ const Popcornbeker = () => {
                     <h2 className="main_h2">De herbruikbare popcornbeker is onze trots.</h2>
                 </div>
                 <p className="main_p">We wilden een iconisch en verrassend product verduurzamen. Daardoor hebben we de herbruikbare popcornbeker ontwikkeld. Verkoop ‘m als merchandise en geef klanten korting op een refill, of ga voor een circulair systeem. Ontdek ons product door omlaag te scrollen!</p>
-                <div class="timeline">
-                    <div class="time left">
-                        <div class="content">
+                <div className="timeline">
+                    <div className="time left">
+                        <div className="content">
                             <h2>2017</h2>
 
                         </div>
                     </div>
-                    <div class="time right">
-                        <div class="content">
+                    <div className="time right">
+                        <div className="content">
                             <h2>2016</h2>
 
                         </div>
                     </div>
-                    <div class="time left">
-                        <div class="content">
+                    <div className="time left">
+                        <div className="content">
                             <h2>2015</h2>
 
                         </div>
                     </div>
-                    <div class="time right">
-                        <div class="content">
+                    <div className="time right">
+                        <div className="content">
                             <h2>2012</h2>
 
                         </div>
                     </div>
-                    <div class="time left">
-                        <div class="content">
+                    <div className="time left">
+                        <div className="content">
                             <h2>2011</h2>
 
                         </div>
                     </div>
-                    <div class="time right">
-                        <div class="content">
+                    <div className="time right">
+                        <div className="content">
                             <h2>2007</h2>
 
                         </div>
