@@ -82,6 +82,19 @@
   padding: 18px 40px;
   border-radius: 4px;
 }
+.main_btn button {
+  font-family: Gothic A1;
+  border: none;
+  background: #96B37D;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: unset;
+  padding: 18px 40px;
+  border-radius: 4px;
+}
 
 .main_h1 {
   font-family: Oswald;

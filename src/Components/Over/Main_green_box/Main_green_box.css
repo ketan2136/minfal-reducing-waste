@@ -1,3 +1,16 @@
 .main_green_box .boxs{
     margin-bottom: 0;
 }
+
+.boxs::before {
+ content: '';
+ background: url('../../Assets/pop_dots.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 80px;
+ height: 80px;
+ position: absolute;
+ top: -39px;
+ left: -11px;
+}

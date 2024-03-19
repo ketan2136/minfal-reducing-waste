@@ -33,3 +33,40 @@
     height: 554px;
 }
 
+.contact_footer {
+    position: relative;
+    padding: 100px 0 100px 0;
+}
+
+
+.contact_footer::before {
+    content: '';
+    background: url('../../Assets/round_lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    top: 35%;
+    right: 0;
+    width: 199px;
+    height: 199px;
+}
+
+.maps>div {
+    position: unset;
+}
+
+.leaflet-container-parent {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 10px;
+}

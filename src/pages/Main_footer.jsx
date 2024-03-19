@@ -8,9 +8,6 @@ const Main_footer = () => {
 
     const location = useLocation();
 
-    // const currentPath = window.location.pathname;
-    console.log(location.pathname);
-
     const renderFooter = () => {
         if (location.pathname === '/') {
             return <Footer />;

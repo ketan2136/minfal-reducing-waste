@@ -1,6 +1,7 @@
 import React from 'react'
 import './Circulair_minfal.css'
 import ref_icon from '../../Assets/ref_icon.png'
+import circulair_mifal from '../../Assets/circulair_mifal.png'
 import circulair_maatwerk from '../../Assets/circulair_maatwerk.png'
 
 const Circulair_minfal = () => {
@@ -23,7 +24,7 @@ const Circulair_minfal = () => {
                                 <p className="main_p"><img src={ref_icon} alt="" />Tot wel 1500 popcornbekers wassen per uur</p>
                             </div>
                             <div className="col-6">
-
+                                <img src={circulair_mifal} alt="" />
                             </div>
                         </div>
                     </div>

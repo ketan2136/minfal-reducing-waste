@@ -15,9 +15,7 @@ const Startup = () => {
                         <div className="row">
                             <div className="col-6">
                                 <div className="startup_manu">
-
                                     <h2 className="main_h2">We houden van uitdaging.</h2>
-
                                     <p className="main_p">Tijdens onze studie Technische Bedrijfskunde in Delft is het idee ontstaan om een verrassend product te verduurzamen. Het idee was eerst een herbruikbaar ijsbakje, maar na een een bezoekje aan de bioscoop kwam er een veel leuker idee naar voren: een herbruikbare popcornbeker.  </p>
                                     <p className="main_p">Bioscopen werken nog niet echt met herbruikbare verpakkingen en dat zagen wij als een mooie uitdaging!</p>
                                 </div>

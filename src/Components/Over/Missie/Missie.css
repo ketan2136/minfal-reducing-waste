@@ -1,3 +1,20 @@
 .missie .main_p {
     padding-bottom: 50px;
 }
+
+.missie {
+    position: relative;
+}
+
+.missie::before {
+    content: '';
+    background: url('../../Assets/round_lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -114px;
+    right: 0;
+    width: 199px;
+    height: 199px;
+}

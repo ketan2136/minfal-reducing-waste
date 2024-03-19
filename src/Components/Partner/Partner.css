@@ -3,17 +3,20 @@
     box-shadow: 0px 4px 40px 0px #00000040;
     padding: 50px 34px;
     border-radius: 20px;
+    position: relative;
 }
 
 .partner_manu .main_h2 {
     color: #FFFFFF;
     text-align: start;
 }
+
 .partner_manu .main_btn {
     text-align: start;
     margin-top: 58px;
 }
-.partner_manu .main_btn a{
+
+.partner_manu .main_btn a {
     background: #96B37D;
 }
 
@@ -22,7 +25,7 @@
     box-shadow: 0px 4px 40px 0px #0000001A;
     padding: 30px;
     height: 100%;
-    border-radius: 15px ;
+    border-radius: 15px;
 }
 
 .prt_box .main_h5 {
@@ -33,4 +36,17 @@
 
     padding-top: 20px;
     text-align: start;
+}
+
+.partner_manu::before {
+    content: '';
+    background: url('../Assets/pop_dots.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -38px;
+    right: -38px;
 }

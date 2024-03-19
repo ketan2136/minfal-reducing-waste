@@ -4,6 +4,32 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 260px 0;
+    position: relative;
+}
+
+.onze::before {
+    content: '';
+    background: url('../Assets/onze_linsRound.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 199px;
+    height: 199px;
+}
+.onze::after {
+    content: '';
+    background: url('../Assets/onze_round.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 120px;
+    right: 25px;
+    width: 132px;
+    height: 159px;
 }
 
 .onze_boxs {
