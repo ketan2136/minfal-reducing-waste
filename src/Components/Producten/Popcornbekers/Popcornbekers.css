@@ -1,5 +1,6 @@
 .popcornbekers {
     padding-top: 90px;
+    position: relative;
 }
 
 .popcornbekers .main_p {
@@ -34,4 +35,17 @@
     background: #96B37D;
     box-shadow: 0px 4px 20px 0px #362D2D40;
 
+}
+
+.popcornbekers::before {
+    content: '';
+    background: url('../../Assets/over_line.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 214px;
+    height: 96px;
 }

@@ -8,8 +8,8 @@ const Hero = () => {
             <div className='container'>
                 <div className="Hero">
                     <h1 className='main_h1'>Wij ontwikkelen herbruikbare verpakkingen en circulaire systemen voor bioscopen, theaters en meer...</h1>
-                    <div className="main_btn">
-                        <a href="#">Meer</a>
+                    <div className="main_btn ">
+                        <a href="#" className='btn'>Meer</a>
                     </div>
                     <div className='hero_before'>
                         <img src={header_img} alt="" />

@@ -35,9 +35,7 @@ const Footer = () => {
     //         formik.resetForm();
     //     },
     // })
-
     // const { handleBlur, handleChange, handleSubmit, values, errors, touched } = formik
-
     return (
         <section className='Footer'>
             <div className="container">

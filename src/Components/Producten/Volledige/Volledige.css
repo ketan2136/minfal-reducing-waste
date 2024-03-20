@@ -1,9 +1,23 @@
 .volledige {
     padding-top: 70px;
+    position: relative;
 }
 .volledige .h2_main{
     padding-bottom: 8px;
 }
 .volledige .main_p{
     padding-bottom: 15px;
+}
+
+.volledige::before {
+    content: '';
+    background: url('../../Assets/popcorn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 205px;
+    height: 227px;
+    position: absolute;
+    top: 30;
+    left: 0;
 }

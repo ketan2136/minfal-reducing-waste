@@ -30,11 +30,12 @@
 
 .offerte .main_p {
     padding-top: 20px;
+    text-align: center;
 }
 
 .offerte .main_btn {
     text-align: start;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .offerte .main_btn a {
@@ -67,3 +68,8 @@
 .contact_img {
     padding-top: 100px;
 }
+
+.contact_form .col-6{
+    width: 100%;
+}
+

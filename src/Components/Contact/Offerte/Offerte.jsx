@@ -1,11 +1,13 @@
 import React from 'react'
 import './Offerte.css'
+import '../../Footer/Footer_common/Footer_common.css'
 import Mask_contact from '../../Assets/contact.png'
+import Footer_common from '../../Footer/Footer_common/Footer_common'
 
 const Offerte = () => {
     return (
         <>
-            <section className='offerte'>
+            <section className='offerte f-boxs'>
                 <div className="container">
                     <div className="h2_main">
                         <h2 className="main_h2">Vraag Offerte aan</h2>
@@ -18,32 +20,8 @@ const Offerte = () => {
                                     <img src={Mask_contact} alt="" />
                                 </div>
                             </div>
-                            <div className="col-6">
-                                <form action="">
-                                    <div className='inpute_boxs'>
-                                        <label htmlFor="">Uw naam</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='inpute_boxs'>
-                                        <label htmlFor="">Bedrijfsnaam</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='inpute_boxs'>
-                                        <label htmlFor="">E-mail</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='inpute_boxs'>
-                                        <label htmlFor="">Telefoonnummer</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='inpute_boxs'>
-                                        <label htmlFor="">Bericht</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className="main_btn">
-                                        <a href="">Over ons</a>
-                                    </div>
-                                </form>
+                            <div className="col-6 contact_form">
+                                <Footer_common  />                    
                             </div>
                         </div>
                     </div>

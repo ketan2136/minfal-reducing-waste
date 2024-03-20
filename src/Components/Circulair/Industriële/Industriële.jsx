@@ -7,7 +7,6 @@ const Industriële = () => {
         <>
             <section className='industriële'>
                 <div className="container">
-
                     <div className="row">
                         <div className="col-6">
                             <div className='industriële_manu'>

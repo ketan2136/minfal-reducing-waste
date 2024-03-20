@@ -38,31 +38,31 @@ const Assortiment = () => {
                 <div className="boxs2">
                     <div className="row">
                         <div className="col-2">
-                            <div className="box">
+                            <div className="box box_hover">
                                 <img src={Ons1} alt="" />
                                 <h5 className="main_h5">Popcornbekers</h5>
                             </div>
                         </div>
                         <div className="col-2">
-                            <div className="box">
+                            <div className="box box_hover">
                                 <img src={Ons2} alt="" />
                                 <h5 className="main_h5">Nacho Trays</h5>
                             </div>
                         </div>
                         <div className="col-2">
-                            <div className="box">
+                            <div className="box box_hover">
                                 <img src={Ons3} alt="" />
                                 <h5 className="main_h5">Chipsbakjes</h5>
                             </div>
                         </div>
                         <div className="col-2">
-                            <div className="box">
+                            <div className="box box_hover">
                                 <img src={Ons4} alt="" />
                                 <h5 className="main_h5">Frisdrankbekers</h5>
                             </div>
                         </div>
                         <div className="col-2">
-                            <div className="box">
+                            <div className="box box_hover">
                                 <img src={Ons5} alt="" />
                                 <h5 className="main_h5">Koffiebekers</h5>
                             </div>

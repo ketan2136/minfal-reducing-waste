@@ -15,7 +15,7 @@ const Popcornbekers = () => {
                     <div className="box_popcorn">
                         <div className="row">
                             <div className="col-4">
-                                <div className="boxs_popcorn">
+                                <div className="boxs_popcorn ">
                                     <img src={popcorn_basic_assorti} alt="" />
                                     <h5 className="main_h5">Basic</h5>
                                 </div>

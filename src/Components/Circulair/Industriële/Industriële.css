@@ -1,14 +1,44 @@
 .industriële {
     padding-top: 100px;
+    position: relative;
 }
+
+.industriële::before {
+    content: '';
+    background: url('../../Assets/round_lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 199px;
+    height: 199px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.industriële::after {
+    content: '';
+    background: url('../../Assets/circulair_blur.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 750px;
+    height: 915px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+
 
 .industriële .h2_main {
     text-align: start;
 }
+
 .industriële .main_p {
     text-align: start;
     padding-top: 20px;
 }
+
 .industriële_manu {
     padding-right: 60px;
 }
@@ -16,7 +46,8 @@
 .last_heading {
     padding-top: 100px;
 }
-.last_heading .h2_main{
+
+.last_heading .h2_main {
     text-align: center;
     padding-bottom: 54px;
 }

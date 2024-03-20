@@ -1,5 +1,6 @@
 .circulairs {
     padding-top: 72px;
+    position: relative;
 }
 .popcorn {
     padding-top: 62px;
@@ -16,4 +17,29 @@
 
 .ref2 {
     padding-top: 100PX;
+}
+
+.circulairs::before {
+    content: '';
+    background: url('../../Assets/popcorn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 205px;
+    height: 227px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.circulairs::after {
+    content: '';
+    background: url('../../Assets/over_line.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 214px;
+    height: 96px;
+    position: absolute;
+    top: 27%;
+    right: 0;
 }

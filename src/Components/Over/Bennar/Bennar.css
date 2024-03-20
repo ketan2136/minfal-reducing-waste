@@ -1,6 +1,10 @@
 .bennar_img {
   position: relative;
   text-align: center;
+  padding: 70px 0 40px 0;
+}
+.bennar_img img{
+  border-radius: 30px;
 }
 
 .bennar_img::before {
@@ -14,7 +18,7 @@
   z-index: -1;
   position: absolute;
   top: 40px;
-  left: -78px;
+  left: -123px;
 }
 
 .banner {

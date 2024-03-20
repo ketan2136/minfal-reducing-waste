@@ -16,7 +16,7 @@ const Partner = () => {
                             <div className="partner_boxs">
                                 <div className="row    row-gap-4 ">
                                     <div className="col-6">
-                                        <div className="prt_box">
+                                        <div className="prt_box ">
                                             <h5 className="main_h5">Totaalpakket</h5>
                                             <p className="main_p">Volledig assortiment en service, Minfal neemt uw werk uit handen</p>
                                         </div>

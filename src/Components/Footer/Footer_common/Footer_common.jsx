@@ -1,9 +1,9 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup'
+import './Footer_common.css'
 
 const Footer_common = () => {
-
 
     let userSchema = yup.object({
         name: yup.string().required("please enter your name"),
@@ -24,7 +24,6 @@ const Footer_common = () => {
 
         validationSchema: userSchema,
         onSubmit: values => {
-
             let savedData = JSON.parse(localStorage.getItem("formData")) || [];
             savedData.push(values);
             localStorage.setItem("formData", JSON.stringify(savedData));
@@ -73,4 +72,4 @@ const Footer_common = () => {
     )
 }
 
-export default Footer_common
+export default Footer_common;
