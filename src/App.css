@@ -307,3 +307,30 @@ body {
         right: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------resposive----------------- */
+
+@media screen and (max-width:1400px){
+  .Hero::before {
+    width: 138.86px;
+    height: 357.48px;
+    position: absolute;
+    top: 252px;
+    right: -37px;
+}
+}

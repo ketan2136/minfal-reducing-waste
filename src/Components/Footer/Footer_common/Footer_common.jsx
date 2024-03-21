@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
-import * as yup from 'yup'
-import './Footer_common.css'
+import * as yup from 'yup';
+import './Footer_common.css';
+import {addDoc, collection} from 'firebase/firestore';
+import {db} from '../../../firbase';
+import { useSelector } from 'react-redux';
 
 const Footer_common = () => {
+
+    const users = useSelector((state) => state.users);
+
+    console.log(users);
+
+
+
+
+
+
+    // const [text ,setText] = useState('')
+    // const handleClick = async () => {
+    //     // const valref = collection(textDB, 'textData');
+    //     // await addDoc(valref, {textVal:text});
+    //     // alert('Data add successfully')
+    //     const handleClick = async () => {
+    //         try {
+    //             const valref = collection(db, 'textData'); // Assuming 'firebase' is correctly initialized
+    //             await addDoc(valref, { textVal: text });
+    //             alert('Data added successfully');
+    //         } catch (error) {
+    //             console.error('Error adding document:', error);
+    //             alert('An error occurred while adding data to Firestore. Please try again.');
+    //         }
+    //     };
+    // }
+
 
     let userSchema = yup.object({
         name: yup.string().required("please enter your name"),
@@ -65,7 +95,7 @@ const Footer_common = () => {
                     <span className="error">{errors.message && touched.message ? errors.message : ' '}</span>
                 </div>
                 <div className="main_btn">
-                    <button type='submit'>Over ons</button>
+                    <button  type='submit'>Over ons</button>
                 </div>
             </form>
         </div>
