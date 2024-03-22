@@ -3,6 +3,6 @@ import UserReducher from './Reducer/UserReducher'
 
 export default configureStore({
   reducer: {
-    users: UserReducher
+    conractData: UserReducher
   },
 })

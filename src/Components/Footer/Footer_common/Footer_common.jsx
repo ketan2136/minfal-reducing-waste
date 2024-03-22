@@ -1,38 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import './Footer_common.css';
-import {addDoc, collection} from 'firebase/firestore';
-import {db} from '../../../firbase';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { addUser, contactAddData, contactGetData } from '../../../redux/Reducer/UserReducher';
 
 const Footer_common = () => {
+    // const [value, setValue] = useState(0);
+    // const [update, setUpdate] = useState(false);
 
-    const users = useSelector((state) => state.users);
+    // const dispatch = useDispatch();
+    // const conractData = useSelector(state => state.conractData);
 
-    console.log(users);
-
-
-
+    // console.log(conractData);
 
 
+    // useEffect(() => {
+    //     dispatch(contactGetData())
+    // }, [])
 
-    // const [text ,setText] = useState('')
-    // const handleClick = async () => {
-    //     // const valref = collection(textDB, 'textData');
-    //     // await addDoc(valref, {textVal:text});
-    //     // alert('Data add successfully')
-    //     const handleClick = async () => {
-    //         try {
-    //             const valref = collection(db, 'textData'); // Assuming 'firebase' is correctly initialized
-    //             await addDoc(valref, { textVal: text });
-    //             alert('Data added successfully');
-    //         } catch (error) {
-    //             console.error('Error adding document:', error);
-    //             alert('An error occurred while adding data to Firestore. Please try again.');
-    //         }
-    //     };
-    // }
+    const [value, setValue] = useState(0);
+    const [update, setUpdate] = useState(false);
+
+    // Redux hooks
+    const dispatch = useDispatch();
+    const conractData = useSelector(state => state.conractData);
+
+    console.log(conractData);
+
+    useEffect(() => {
+        dispatch(contactGetData())
+    }, [])
+
 
 
     let userSchema = yup.object({
@@ -51,18 +50,20 @@ const Footer_common = () => {
             phoneNumber: '',
             message: '',
         },
-
         validationSchema: userSchema,
-        onSubmit: values => {
-            let savedData = JSON.parse(localStorage.getItem("formData")) || [];
-            savedData.push(values);
-            localStorage.setItem("formData", JSON.stringify(savedData));
+        onSubmit: (values, action) => {
+
+            dispatch(contactAddData(values))
+            // let savedData = JSON.parse(localStorage.getItem("formData")) || [];
+            // savedData.push(values);
+            // localStorage.setItem("formData", JSON.stringify(savedData));
 
             formik.resetForm();
         },
     })
 
     const { handleBlur, handleChange, handleSubmit, values, errors, touched } = formik
+
 
     return (
         <div>
@@ -95,11 +96,29 @@ const Footer_common = () => {
                     <span className="error">{errors.message && touched.message ? errors.message : ' '}</span>
                 </div>
                 <div className="main_btn">
-                    <button  type='submit'>Over ons</button>
+                    <button type='submit'>Over ons</button>
                 </div>
             </form>
+            <div>
+                {
+                    value === 1 && 
+                    <>
+                    {
+                        conractData.conractData.map((v,i) => {
+                            console.log(v.name);
+                            return (
+                                <h2>{v.name}</h2>
+                            )
+                        })
+                    }
+                    </>
+                }
+            </div>
         </div>
     )
 }
 
 export default Footer_common;
+
+
+

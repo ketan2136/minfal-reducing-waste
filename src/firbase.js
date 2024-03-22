@@ -20,6 +20,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const textDB = getFirestore(app);
 const firebaseApp = initializeApp(firebaseConfig);
-const db = getFirestore(firebaseApp);
+const db = getFirestore(app);
 
 export {textDB,db}
