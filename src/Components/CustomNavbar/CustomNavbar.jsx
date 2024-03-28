@@ -10,7 +10,6 @@ import { Link, useLocation } from 'react-router-dom';
 function CustomNavbar() {
 
   const location = useLocation();
- 
 
   return (
     <div className="navbar-main">
@@ -44,6 +43,9 @@ function CustomNavbar() {
                 </li>
                 <li>
                   <Link className={location.pathname === '/producten' ? 'active' : ''} to="/producten">Producten</Link>
+                </li>
+                <li>
+                  <Link className={location.pathname === '/dataShow' ? 'active' : ''} to="/dataShow">dataShow</Link>
                 </li>
               </ul>
             </Nav>

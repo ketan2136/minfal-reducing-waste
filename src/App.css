@@ -334,3 +334,22 @@ body {
     right: -37px;
 }
 }
+
+
+
+
+/* ------------------Data show----------------- */
+
+.dataShow {
+  border: 2px solid black;
+  padding: 25px;
+  display: inline-block;
+} 
+
+.dataShow1 button {
+  margin-right: 20px;
+  color: #FFFFFF;
+  background-color: #436041;
+  border: none;
+  padding: 5px 10px;
+}

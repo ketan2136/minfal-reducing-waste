@@ -5,34 +5,31 @@ import './Footer_common.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, contactAddData, contactGetData } from '../../../redux/Reducer/UserReducher';
 
-const Footer_common = () => {
-    // const [value, setValue] = useState(0);
-    // const [update, setUpdate] = useState(false);
-
-    // const dispatch = useDispatch();
-    // const conractData = useSelector(state => state.conractData);
-
-    // console.log(conractData);
-
-
-    // useEffect(() => {
-    //     dispatch(contactGetData())
-    // }, [])
-
-    const [value, setValue] = useState(0);
+const Footer_common = (props) => {
+    const [value, setValue] = React.useState(0);
     const [update, setUpdate] = useState(false);
 
     // Redux hooks
     const dispatch = useDispatch();
     const conractData = useSelector(state => state.conractData);
 
-    console.log(conractData);
+
+
+
+    if (conractData.isLoading) {
+        // console.log(conractData.conractData[0])
+    }
+
+
+    // if (conractData && conractData.name) {
+    //     console.log(conractData.name);
+    // } else {
+    //     console.log('Name property not found or data not yet fetched');
+    // }
 
     useEffect(() => {
         dispatch(contactGetData())
     }, [])
-
-
 
     let userSchema = yup.object({
         name: yup.string().required("please enter your name"),
@@ -67,6 +64,8 @@ const Footer_common = () => {
 
     return (
         <div>
+
+
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-6">
@@ -99,20 +98,37 @@ const Footer_common = () => {
                     <button type='submit'>Over ons</button>
                 </div>
             </form>
+        
             <div>
-                {
-                    value === 1 && 
-                    <>
-                    {
+                <div>
+                   
+                    {/* {
                         conractData.conractData.map((v,i) => {
-                            console.log(v.name);
-                            return (
-                                <h2>{v.name}</h2>
-                            )
+                                return (
+                                    <li key={i.id}>{'name :' + v.name   }</li>
+                                    // <li key={i.id}>{v.email}</li>
+                                    // <li>{v.email}</li>,
+                                    // <li>{v.message}</li>,
+                                    // <li>{v.phoneNumber}</li>,
+                                    // <li>{}</li>
+                                )
                         })
-                    }
-                    </>
-                }
+                    } */}
+                   
+                   <ul>
+                    {conractData.conractData.map((contact, index) => (
+                        <li key={index}>
+                            <p>Name: {contact.name}</p>
+                            <p>Company: {contact.company}</p>
+                            <p>Email: {contact.email}</p>
+                            <p>Phone Number: {contact.phoneNumber}</p>
+                            <p>Message: {contact.message}</p>
+                        </li>
+                    ))}
+                </ul>
+
+                </div>
+
             </div>
         </div>
     )
@@ -122,3 +138,69 @@ export default Footer_common;
 
 
 
+// import React, { useEffect } from 'react';
+// import { useFormik } from 'formik';
+// import * as yup from 'yup';
+// import './Footer_common.css';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { contactAddData, contactGetData } from '../../../redux/Reducer/UserReducher';
+
+// const Footer_common = () => {
+//     // Redux hooks
+//     const dispatch = useDispatch();
+//     const conractData = useSelector(state => state.conractData);
+
+//     useEffect(() => {
+//         dispatch(contactGetData());
+//     }, [dispatch]);
+
+//     let userSchema = yup.object({
+//         name: yup.string().required("Please enter your name"),
+//         company: yup.string().required("Enter your company"),
+//         email: yup.string().email('Invalid email').required("Please enter Email"),
+//         phoneNumber: yup.string().required("Please enter your phone number"),
+//         message: yup.string().required('Please enter a message')
+//     });
+
+//     const formik = useFormik({
+//         initialValues: {
+//             name: '',
+//             company: '',
+//             email: '',
+//             phoneNumber: '',
+//             message: '',
+//         },
+//         validationSchema: userSchema,
+//         onSubmit: (values, action) => {
+//             dispatch(contactAddData(values));
+//             formik.resetForm();
+//         },
+//     });
+
+//     const { handleBlur, handleChange, handleSubmit, values, errors, touched } = formik;
+
+//     return (
+//         <div>
+//             <form onSubmit={handleSubmit}>
+//                 {/* Form fields */}
+//             </form>
+            
+//             <div>
+//                 {/* Render contact data */}
+//                 <ul>
+//                     {conractData.conractData.map((contact, index) => (
+//                         <li key={index}>
+//                             <p>Name: {contact.name}</p>
+//                             <p>Company: {contact.company}</p>
+//                             <p>Email: {contact.email}</p>
+//                             <p>Phone Number: {contact.phoneNumber}</p>
+//                             <p>Message: {contact.message}</p>
+//                         </li>
+//                     ))}
+//                 </ul>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Footer_common;

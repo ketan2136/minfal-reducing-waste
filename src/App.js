@@ -12,6 +12,7 @@ import Producten from "./pages/Producten.jsx";
 import Contact from "./pages/Contact.jsx";
 import Main_footer from "./pages/Main_footer.jsx";
 import Last_footer from "./Components/Footer/Footers/Last_footer.jsx";
+import DataShow from "./pages/DataShow.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/circulair" element={<Circulair />} />
         <Route path="/producten" element={<Producten />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/dataShow" element={<DataShow />} />
       </Routes>
       {/* <Footer /> */}
       <Main_footer />
