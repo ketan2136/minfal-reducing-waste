@@ -5,7 +5,7 @@ import Footer_common from '../Components/Footer/Footer_common/Footer_common';
 import { useNavigate } from 'react-router-dom';
 
 
-const DataShow = () => {
+const DataShow = (props) => {
 
     const [value, setValue] = React.useState(0);
     const [update, setUpdate] = useState(false);

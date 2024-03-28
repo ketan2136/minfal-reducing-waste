@@ -5,9 +5,13 @@ import Mask_contact from '../../Assets/contact.png'
 import Footer_common from '../../Footer/Footer_common/Footer_common'
 
 const Offerte = () => {
+
+
+
     return (
         <>
             <section className='offerte f-boxs'>
+                
                 <div className="container">
                     <div className="h2_main">
                         <h2 className="main_h2">Vraag Offerte aan</h2>
