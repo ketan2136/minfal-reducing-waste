@@ -4,15 +4,17 @@ import * as yup from 'yup';
 import './Footer_common.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, contactAddData, contactGetData } from '../../../redux/Reducer/UserReducher';
+import { useParams } from 'react-router-dom';
 
 const Footer_common = (props) => {
 
     // Redux hooks
     const dispatch = useDispatch();
     const conractData = useSelector(state => state.conractData);
-console.log(conractData);
+    console.log(conractData);
 
 
+    
 
 
     useEffect(() => {
@@ -88,10 +90,10 @@ console.log(conractData);
                     <button type='submit'>Over ons</button>
                 </div>
             </form>
-        
+
             <div>
                 <div>
-                   
+
                     {/* {
                         conractData.conractData.map((v,i) => {
                                 return (
@@ -104,18 +106,18 @@ console.log(conractData);
                                 )
                         })
                     } */}
-                   
-                   <ul>
-                    {conractData.conractData.map((contact, index) => (
-                        <li key={index}>
-                            <p>Name: {contact.name}</p>
-                            <p>Company: {contact.company}</p>
-                            <p>Email: {contact.email}</p>
-                            <p>Phone Number: {contact.phoneNumber}</p>
-                            <p>Message: {contact.message}</p>
-                        </li>
-                    ))}
-                </ul>
+
+                    <ul>
+                        {conractData.conractData.map((contact, index) => (
+                            <li key={index}>
+                                <p>Name: {contact.name}</p>
+                                <p>Company: {contact.company}</p>
+                                <p>Email: {contact.email}</p>
+                                <p>Phone Number: {contact.phoneNumber}</p>
+                                <p>Message: {contact.message}</p>
+                            </li>
+                        ))}
+                    </ul>
 
                 </div>
 

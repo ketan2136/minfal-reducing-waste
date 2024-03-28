@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { contactDelete, contactEdit, contactGetData, contactUpdateData } from '../redux/Reducer/UserReducher';
 import Footer_common from '../Components/Footer/Footer_common/Footer_common';
 import { useNavigate } from 'react-router-dom';
+import Contact from './Contact';
 
 
 const DataShow = (props) => {
 
     const [value, setValue] = React.useState(0);
     const [update, setUpdate] = useState(false);
+    const navigate = useNavigate();
 
     // Redux hooks
     const dispatch = useDispatch();
@@ -23,14 +25,15 @@ const DataShow = (props) => {
         dispatch(contactGetData())
     }, [])
 
-    const history = useNavigate();
+    
 
     const handleEdit = (v) => {
-        console.log(v,'1');
-        history('/contact');
-    //   <Footer_common />
-       dispatch(contactUpdateData(v))
-        // setValues(v)
+        navigate(`/contact`)
+    //     console.log(v,'1');
+    //     history('/contact');
+    // //   <Footer_common />
+    //    dispatch(contactUpdateData(v))
+    //     // setValues(v)
     }
     const handleDelete = (v) => {
         console.log(v.id);
@@ -55,6 +58,7 @@ const DataShow = (props) => {
                                     <p>Message: {contact.message}</p>
                                     <button onClick={() => handleEdit(contact)}>edit</button>
                                     <button onClick={() => handleDelete(contact)}>delet</button>
+                                    
                                 </div>
                             ))
                         }
